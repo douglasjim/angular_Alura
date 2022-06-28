@@ -14,6 +14,15 @@
 
   <button>Transferir</button>
 
-  <nova-transferencia (aoTransFerir)="transferir($event)"></nova-transferencia>
+  <nova-transferencia (valoresComErro)="modalErro($event)" (aoTransFerir)="transferir($event)"></nova-transferencia>
+
+  <!-- assim nao ira dar erro, pq aqui ele da erro pq tenta buscar o valor do campo destino sendo que o destino ainda nao tem valor, entao precisamos colocar o ? para dizer que ainda vai vir o valor so esperar
+  ou a gente inicia ele la no component criando ele recebendo um objeto vazio ou indica aqui no html que ele irá vir o valor -->
+  <p>Valor: {{ valorTransferencia?.valor }}</p>
+  <p>Destino: {{ valorTransferencia?.destino }}</p>
+
+
+  <p *ngIf="ixibirModal" >ERRO !!! {{mensagemErro}}</p>
+  
 
 </form>
