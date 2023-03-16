@@ -37,6 +37,7 @@ export class testeNovaTransferencia {
   limparCampos(){
     this.valor = null;
     this.destino = null;
+    
   }
 
 }
