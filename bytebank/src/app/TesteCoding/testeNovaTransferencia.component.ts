@@ -37,7 +37,24 @@ export class testeNovaTransferencia {
   limparCampos(){
     this.valor = null;
     this.destino = null;
-    
+
   }
+
+  //tete
+  //texto dinamico `teste ${variavel}`
+  //lembrando que o texto tem que esta com esse tipo de aspas
+  // for(let contador = 0; contador = listaDeTeclas.length; contador++){
+
+  // }
+
+  //sempre usar === e nao o ==
+
+  //.onkeydown = quando alguma tecla do teclado for pressionada faca algo
+  //.onkeyup - quando o usuario solta o botao do teclado
+  //funcoes nativas do JS podemos colocar parametro para saber oq vem nessa funcao e assim usar oq que tem dentro dela
+
+  
+
+
 
 }

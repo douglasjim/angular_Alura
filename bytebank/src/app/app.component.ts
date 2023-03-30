@@ -12,6 +12,8 @@ export class AppComponent {
   valorTransferencia: any;
   //valorTransferencia: any =  {} //podemos resolver o problema do erro que ocorre no console quando a gente tentar pegar os valores daqui de dentro pelo html iniciando ele como chaves
   //ou podemos resolver esse problema la no html usando o ?
+  //ng g c nomeDaPasta/nomeDoComponente
+  //ng g c nomeDaPasta/nomeDoNovoComponente --flat
 
   ixibirModal: boolean;
   mensagemErro: string;
