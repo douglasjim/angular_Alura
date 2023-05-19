@@ -56,5 +56,63 @@
     &:hover {
       opacity: 0.8;
     }
+
+    //height: 100vh - outra maneira de decidir o tamanho de algo invez de usar o px
+    //box-sizing: border-box; -  usamos quando o conteudo que ira receber esta propriedade irá ficar dentro de algum lugar e queremos limitar ele dentro desse lugar para ele nao sair entao usamos o box-sizing border-box com width 100% para pegar as laterais toda ou outro valor, 
+    //meio que a gente controla melhor um conteudo que esteja dentro do border-box e os atributos que esteja ligado ao tamanho meio que fica em um tamanho padrao
+    //e com border-box podemos fazer com oque os quadrados nao quebrem e n va para linha de baixo, os atributos que adicionam largura altura etc... a mais ele ajusta para nao ferrar com o layout
+    //geralmente usamos isso para organizar uma caixa do lado da outra ou itens um do lado do outro
+    //podemos pegar uma DIV e colocar um css de display block ela comeca a pegar todo o lado esquerdo e direito da tela caso a gente nao limita com width ou lenght
+    //quando usamos o diplay:inline nenhuma mudanca de width e height vai ser refletida pq quando usamos o inline meio que bloquia essas outras modificacoes e pega um tamanho padrao do conteuodo 
+    //se caso o conteudo esta saindo do display box podemos arrumar o tamanho dele ou usar o overflow:hidden para eesconder-lo(eu acho que n é eficiente), e tambem podemos usar o overflow-y ou x para escolher se o lado e horinzontal ou vertical que vc queira colocar o atributo scroll, entao ficaria assim overflow-y: scroll
+    //usando margin: 0 auto; ele irá deixar o conteudo centralizado, ali quer dizer que direita e esquerda vai ser auto, cima e baixo zero
+    //margin: 0 auto 50px auto assim mexemos em cada canto da margin da div
+    //box-sizing: content-box usamos para mexer no conteudo que esta dentro de uma caixa
+    //com display:flex deixamos tudo um do lado do outro
+    //usando o flex-wrap: wrap ele quebra linha e vai para linha de baixo quando usamos margin nesses elementos
+    //max-width - isso ja sabemos
+    //ainda sobre box-sizing = responsável por como a largura e a altura totais de um elemento são calculadas. 
+    //ainda sobre box-sizing: border-box = Neste caso a imagem (elemento filho) “encolheria” e se adequaria ao tamanho do conteúdo (elemento pai). Isso acontece porque o border-box informa ao navegador para contabilizar qualquer borda e preenchimento nos valores especificados para a largura e a altura de um elemento.
+    //pegando por exemplo o problema da imagem da alura | https://cursos.alura.com.br/course/html-css-classes-posicionamento-flexbox/task/120919
+    // box-sizing: border-box;
+    // width: 100%;
+    // padding: 5px;
+    //os tres codigos de cima é a solucao
+    //apos esse exemplo da linha de cima percebemos que o box sizing: border box faz com que as coisas que esta dentro de uma div e nessa div usamos o border box tudo que estiver dentro dele vai escolher e ficar certinho na div e nao vai ultrapassar a div
+    //quando temos itens que queremos deixar um do lado do outro usamos a propriedade display: flex, assim os elementos do filho desse pai que colocamos o display:flex vao ficar um do lado do outro
+    //continuando com o display: flex, podemos entao escolher pra qual lado ou sentido que vamos organizar os conteudos que esta dentro da tag pai, neste caso vamos escolher o  align-items:center
+    //ainda com display:flex podemos usar o justify-content: space-between para que os conteudos fica distante um do outro | e o padrao do display:flex seria o direction:row
+    //Google font para pegar fontes diferentes, agora é só importar a fonte no arquivo css
+    //text-align:center , text-decoration: none para remover a linha de baixo do link, temos tambem o flex-direction: column para dizer a diracao que vamos organizar os conteudos
+    //tem tambem a propriedade gap do display:flex gap:10px, esse elemento serve para alinhas os objetos um do lado do outro 
+    //A propriedade flex-direction define a direção em que os itens do display: flex devem ser dispostos e já tem row como valor padrão, por isso se adicionarmos flex-direction: row
+    //Ao adicionarmos a propriedade flex-direction: column os quadrados irão se posicionar verticalmente, já que define que a direção do display: flex deve ser em “coluna”.
+    //criamos a pasta assets para colocar as fotos que queremos
+    //footer é o nosso rodape ultima tag do sistema em baixo
+    //no figma para ver os valores mais precisos usamos o botao alt e passar o mouse em cima para ver os valores
+    //tag nav de navegacao,
+    //:root{} criamos isso para criar nome de variaveis de css globalmente assim qualquer lugar do projeto pode chamar essa variavel para usar a cor, e para criar a variavel usamos dois tracos e o nome da variavel por exemplo --main-blue
+    // :root{
+    //   --cor-principal: #0000000;
+    // }
+    //ficaria desse jeito, e para usar essas variaveis seria, background-color: var(--cor-principal); desse jeito
+    // podemos criar variavel para fonte,
+    // color hunt, site para encontrar a cor ideal
+    //inves de usar px vamos testar usar o rem no lugar | 16px = 1rem | provavelmente deve existir algum site que faca a conversao do px para rem
+    //mudar o tamanho da fonte no navegador, como por exemplo o chome e ver se a interface irá ficar toda estranha
+    //para fazer algo na interface se adaptar melhor na tela usamos as medidas porcentagem assim ele irá se adequar de acordo com o tamanho da tela como se fosse um trabalho do materialize, responsivo (responsividade)
+    //para fazer uma interface responsivo de um jeito bem facil comecamos a usar o @media
+    // @media(max-width: 1200px){
+        // .apresenteacao{
+        //   color: black;
+        // }
+    // }
+    // quando o tamanho da tela for menor que 1200px as mudancas que a gente for fazer dentro das chaves vai ser aplicado na tela
+    //quando a tela passar dos 1200px as mudancas visuais que sera aplicada, vai ser a padrao
+    //podemos tbm usar o flex-direction: colunm-reverse tbm
+    //oq n esta escrito no media ele vai usar oq estaescrito no padrao
+
+
+
   }
   

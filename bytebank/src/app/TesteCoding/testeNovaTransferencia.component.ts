@@ -40,7 +40,6 @@ export class testeNovaTransferencia {
 
   }
 
-  //tete
   //texto dinamico `teste ${variavel}`
   //lembrando que o texto tem que esta com esse tipo de aspas
   // for(let contador = 0; contador = listaDeTeclas.length; contador++){
